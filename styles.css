@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+:root {
+    --color-blue: #1e90ff; /* A vibrant shade of blue */
+    --color-button-green: #32CD32; /* A shade of green for the buttons */
+    --color-button-text: white; /* White text for buttons */
+}
+
+.header h1 {
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-blue);
+    font-size: 4rem;
+    text-shadow: 3px 3px 0px #555; /* A darker shadow for a 'cool' effect */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px; /* Slight spacing to enhance readability */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increased space between buttons */
+    margin-bottom: 30px; /* More space between buttons and grid */
+}
+
+#new-grid, .clear-grid {
+    padding: 12px 24px;
+    font-size: 18px; /* Slightly larger font size */
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#new-grid:hover, .clear-grid:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* More noticeable scale increase on hover */
+}
+
+#new-grid:active, .clear-grid:active {
+    background-color: #397d3c;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px; /* Adjust if needed */
+    border: 2px solid #bbb;
+    background-color: white;
+}
+
+.square {
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+}
